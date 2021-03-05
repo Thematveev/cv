@@ -95,3 +95,60 @@ header > div.content {
     right: 0;
     margin: 0 auto;
 }
+
+/* skills */
+section.skills {
+    height: 100vh;
+    padding-top: 54px;
+    box-sizing: border-box;
+}
+
+
+section.skills > .container {
+    margin: 0 auto;
+    width: 380px;
+}
+
+
+section.skills > .container > .title {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 87px;
+
+}
+
+.skill {
+    margin-bottom: 18px;
+}
+
+.skills_list {
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.skill > .skill_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+
+.skill_title > .percentage {
+    font-size: 14px;
+}
+
+.skill_dash {
+    height: 22px;
+    border-radius: 32px;
+    border: 1px solid #03081C;
+}
+
+.skill_dash > div {
+    background-color: blueviolet;
+    height: inherit;
+    border-radius: inherit;
+    width: 50%;
+}
