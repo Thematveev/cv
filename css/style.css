@@ -108,27 +108,7 @@ div.info .position {
     margin-left: 15px;
 }
 
-@media (min-width: 768px){
-    div.content_header {
-        justify-content: space-between;
-        flex-direction: row;
-    }
 
-    header > div.content {
-        max-width: 700px;
-    
-    }
-
-    .content_btns {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .content_btns > a.btn {
-        width: 45%;
-    }
-
-}
 
 @media (min-width: 375px){
     div.photo {
@@ -184,6 +164,63 @@ div.info .position {
     }
 }
 
+@media (min-width: 768px){
+
+    header {
+        padding-top: 80px;
+    }
+
+    div.photo {
+        height: 250px;
+        width: 250px;
+    }
+
+    div.content_header {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    header > div.content {
+        max-width: 620px;
+    
+    }
+
+    .content_btns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content_btns > a.btn {
+        width: 48%;
+        margin: initial;
+    }
+
+    div.info {
+        margin: initial;
+    }
+
+    div.info .greeting {
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: start;
+    }
+
+    div.info .name {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    div.info .position {
+        font-size: 16px;
+        text-align: end;
+    }
+
+    .content_btns {
+        padding-top: 60px;
+    }
+
+}
+
 
 
 
@@ -202,13 +239,13 @@ section.skills {
 
 section.skills > .container {
     margin: 0 auto;
-    width: 380px;
+    max-width: 75%;
 }
 
 
 section.skills > .container > .title {
     text-align: center;
-    font-size: 48px;
+    font-size: 28px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -251,4 +288,10 @@ section.skills > .container > .title {
     height: inherit;
     border-radius: inherit;
     width: 50%;
+}
+
+@media (min-width: 768px){
+    section.skills > .container {
+
+    }
 }
