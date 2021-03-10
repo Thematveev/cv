@@ -140,6 +140,10 @@ section.skills > .container > .title {
     font-size: 14px;
 }
 
+.skill_title > .title {
+    font-weight: 300;
+}
+
 .skill_dash {
     height: 22px;
     border-radius: 32px;
@@ -147,7 +151,7 @@ section.skills > .container > .title {
 }
 
 .skill_dash > div {
-    background-color: blueviolet;
+    background: linear-gradient(90deg, #2E2CF0 0%, #06AFFC 100%);
     height: inherit;
     border-radius: inherit;
     width: 50%;
