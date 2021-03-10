@@ -3,9 +3,9 @@
     padding: 0;
 }
 header {
-    padding-top: 55px;
+    padding-top: 32px;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -27,8 +27,8 @@ div.content_header {
 
 
 div.photo {
-    height: 249px;
-    width: 249px;
+    height: 180px;
+    width: 180px;
     border-radius: 100%;
     background: linear-gradient(rgba(47, 43, 240, 1), rgba(10, 45, 171, 0.67));
     display: flex;
@@ -44,7 +44,7 @@ div.photo > img {
 }
 
 div.info {
-    margin-top: 45px;
+    margin-top: 10px;
     max-width: 313px;
     font-family: Inter;
     font-style: normal;
@@ -54,31 +54,31 @@ div.info {
 }
 
 div.info .greeting{
-    font-size: 24px;
+    font-size: 17px;
     line-height: 29px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 div.info .name {
-    font-size: 34px;
-    line-height: 41px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 30px;
+    
 }
 
 div.info .position {
-    font-size: 18px;
+    font-size: 13px;
     line-height: 22px;
 }
 
 .content_btns {
-    padding-top: 20px;
+    
 }
 
 .content_btns .btn {
-    margin-top: 22px;
+    
     box-sizing: border-box;
 
-    height: 75px;
+    height: 50px;
     display: flex;
     border-radius: 20px;
     /* background: linear-gradient(94.78deg, #2F2BF0 1.68%, #05B3FD 100%); */
@@ -86,18 +86,20 @@ div.info .position {
     font-family: Inter;
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 29px;
     color: #03081C;
     text-align: center;
     justify-content: center;
     align-items: center;
-
-    border: 4px solid transparent;
+    width: 71%;
+    border: 2px solid transparent;
     border-radius: 80px;
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
     background-origin: border-box;
     background-clip: content-box, border-box;
+    margin: 0 auto;
+    margin-top: 10px;
     
     
 }
@@ -127,6 +129,62 @@ div.info .position {
     }
 
 }
+
+@media (min-width: 375px){
+    div.photo {
+        height: 220px;
+        width: 220px;
+    }
+
+    div.info {
+        margin-top: 40px;
+    }
+
+    .content_btns .btn {
+        height: 70px;
+        width: 90%;
+    }
+
+    .content_btns {
+        padding-top: 34px;
+    }
+}
+
+@media (min-width:414px){
+    div.photo {
+        height: 200px;
+        width: 200px;
+    }
+
+    div.info .greeting {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    div.info .name {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    div.info .position {
+        font-size: 16px;
+    }
+
+    .content_btns {
+        padding-top: 24px;
+    }
+
+    .content_btns .btn {
+        height: 70px;
+        width: 90%;
+    }
+
+    div.info {
+        margin-top: 30px;
+    }
+}
+
+
 
 
 
