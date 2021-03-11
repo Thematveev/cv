@@ -231,25 +231,25 @@ div.info .position {
 
 /* skills */
 section.skills {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 54px;
     box-sizing: border-box;
 }
 
 
-section.skills > .container {
+.container {
     margin: 0 auto;
     max-width: 75%;
 }
 
 
-section.skills > .container > .title {
+.container > .title {
     text-align: center;
     font-size: 28px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
-    margin-bottom: 87px;
+    
 
 }
 
@@ -260,6 +260,7 @@ section.skills > .container > .title {
 .skills_list {
     list-style: none;
     font-family: 'Inter', sans-serif;
+    margin-top: 87px;
 }
 
 .skill > .skill_title {
@@ -295,3 +296,48 @@ section.skills > .container > .title {
 
     }
 }
+
+/* Hire block */
+
+section.hire {
+    min-height: 100vh;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.reply_form input, textarea {
+    display: block;
+    width: 100%;
+
+    
+
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 22px;
+
+    
+}
+
+.reply_form input {
+    width: calc(100% / 2 - 16px);
+    height: 60px;
+    padding-left: 43px;
+    font-size: 24px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+    margin-top: 95px;
+    
+}
+
+.reply_form input::placeholder{
+    font-size: initial;
+}
+
+
+
